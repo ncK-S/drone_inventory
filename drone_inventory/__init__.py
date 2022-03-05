@@ -16,7 +16,7 @@ from .site.routes import site
 
 app = Flask(__name__)
 app.register_blueprint(site)
-app.register_blueprint(api)
+# app.register_blueprint(api)
 
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///patients.db'
