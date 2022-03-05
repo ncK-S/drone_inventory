@@ -3,6 +3,10 @@
 <form  method="POST">
     {{ form.hidden_tag() }}
     <div class="form-group">
+        <fieldset id="facility-field">
+            {{ form.facility.label }}
+            {{ form.email(class = 'form-control', placeholder = 'Enter The Name of Your Facility...') }}
+        </fieldset>
         <fieldset id="email-field">
             {{ form.email.label }}
             {{ form.email(class = 'form-control', placeholder = 'Enter email...') }}
@@ -16,6 +20,6 @@
             {{ form.confirm(class = 'form-control', placeholder = 'Confirm Password ...') }}
         </fieldset>
 
-        {{ form.submit_button(class='btn btn-primary btn-block') }}
+        {{ form.submit_button(class='btn btn-primary btn-block', id='sub-btn')  }}
     </div>
 </form>
